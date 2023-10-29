@@ -1,0 +1,263 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    background-color: rgba(0, 255, 255, 0);
+}
+
+.prod {
+    background-color: rgba(0, 255, 255, 0)
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14px;
+    background-color: rgb(34, 34, 34);
+    z-index: -120;
+}
+
+.overlay {
+    position: absolute;
+    top: 20%;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -100;
+    background: url('piscine_bg.png') center center no-repeat;
+    background-size: 100%;
+    background-attachment: scroll;
+}
+
+header {
+    max-width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 1000px;
+    padding: 30px 0 10px;
+}
+
+nav .logo {
+    width: 100%;
+}
+
+nav ul {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 40px;
+}
+
+nav ul li {
+    list-style: none;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+    transition: color .6s
+}
+
+nav ul li a:hover {
+    color: rgb(43, 160, 255);
+}
+
+.text {
+    padding: 70px 0;
+    color: white;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text h1 {
+    font-size: 75px;
+    line-height: 1.5;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.text p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+    background-color: rgba(0, 255, 255, 0)
+}
+
+.text a {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 25px;
+    border: 1px solid;
+    transition: transform .2s; /* Animation */
+    color: rgb(43, 160, 255);
+    padding: 10px 20px;
+    margin-right: 20px;
+}
+
+.text a:hover {
+    transform: scale(1.1); /* (effet hover) */
+  }
+
+.text a.produits {
+    color: white;
+    background-color: rgb(43, 160, 255);
+    font-weight: 600;
+}
+
+.auto_typing {
+    color: rgb(43, 160, 255);
+}
+
+.les_sliding {
+    background-color: rgb(34, 34, 34);
+    margin: 0;
+    padding: 0;
+    height: 672px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider {
+    width: 600px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.slides {
+    width: 500%;
+    height: 472px;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 20%;
+    transition: 2s;
+}
+
+.slide img {
+    width: 500px;
+    height: 472px;
+    border-radius: 10px;
+}
+
+/*nav manuelle*/
+
+.nav_manuelle {
+    position: absolute;
+    width: 500px;
+    margin-top: 530px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn {
+    border: 2px solid rgb(253, 254, 255);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 40px;
+}
+
+.manual-btn:hover {
+    background-color: rgb(43, 160, 255);
+}
+
+#radio1:checked ~ .first {
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+    margin-left: -20%;
+}
+
+/**navigation automatique des sliders**/
+
+.nav_auto {
+    position: absolute;
+    display: flex;
+    width: 500px;
+    justify-content: center;
+    margin-top: 530px;
+}
+
+.nav_auto div {
+    border: 2px solid rgb(255, 255, 255);
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.nav_auto div:not(:last-child) {
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .nav_auto .auto_btn1 {
+    background-color: rgb(43, 160, 255);
+}
+
+#radio2:checked ~ .nav_auto .auto_btn2 {
+    background-color: rgb(43, 160, 255);
+}
+
+.pdf {
+    padding: 90px 0 10px;
+    background: url('plan_pi_bn.jpg') center center no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    color: rgb(255, 255, 255);
+    height: 1000px;
+}
+
+.intro {
+    margin-top: -40px;
+    padding-left: 70px;
+    line-height: 4rem;
+    font-size: 50px;
+    max-width: 90%;
+}
+
+.catalogue {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 25px;
+    border: 1px solid;
+    color: white;
+    transition: transform .2s; /* Animation */
+    background-color: rgb(43, 160, 255);
+    padding: 10px 20px;
+    margin-right: 20px;
+    margin-left: 70px;
+}
+
+.ccei {
+    color: rgb(43, 160, 255)
+}
+
+.connexion {
+    color: rgb(43, 160, 255);
+}
+
+.catalogue:hover {
+    transform: scale(1.1); /* (effet hover) */
+  }

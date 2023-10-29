@@ -1,0 +1,105 @@
+:root {
+    --background-color:  rgb(34, 34, 34);
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.logo {
+    width: 50px;
+    transition: transform .2s
+}
+
+.logo:hover{
+    transform: scale(1.2)
+}
+
+.fa_brands {
+    width: 50px;
+    transition: transform .2s;
+}
+
+.fa_brands:hover {
+    transform: scale(1.2)
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid rgb(85, 85, 85);
+}
+
+nav > .nav_section {
+    padding: 3rem 2rem;
+    display: flex;
+    gap: 1rem;
+    border-left: 1px solid rgb(85, 85, 85);
+    align-items: center;
+    justify-content: center;
+}
+
+#nav_social_section,
+#nav_contact_section {
+    flex-grow: 1;
+}
+
+#nav_logo_section,
+#nav_link_section {
+    flex-basis: calc(100% / 3);
+}
+
+h1, h2, h3, a, p, span {
+    font-weight: 400;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+#nav_logo_section > a > i {
+    font-size: 2.5rem;
+}
+
+#nav_logo_section {
+    justify-content: flex-start;
+}
+
+#nav_link_section {
+    gap: 6rem;
+}
+
+#nav_social_section {
+    gap: 3rem;
+}
+
+/*BARRE DE NAVIGATION FINIE*/
+
+.LED, .AUTO, .CO, .TRAIT {
+    border-left: solid 10px rgb(43, 160, 255);
+    border-bottom: solid 10px rgb(43, 160, 255);
+    margin-top: 55px;
+    margin-left: 55px;
+    font-size: 55;
+}
+
+.soustitre {
+    margin-left: 35px;
+    font-size: 200%;
+    font-style: oblique;
+}
+
+p {
+    margin-left: 30px;
+    line-height: 2;
+}

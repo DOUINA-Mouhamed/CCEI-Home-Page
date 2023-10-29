@@ -1,0 +1,106 @@
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, minimum-scale=0.25, maximum-scale=1.6, initial-scale=1.0" />
+    <link rel="stylesheet" href="style_pa.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <title>CCEI - Accueil</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#"><img src="logo.png" alt="" class="logo"></a>
+            <ul>
+                <li><a href="#">Accueil</a></li>
+                <li><a href="https://faqccei.zohodesk.eu/portal/fr/home">FAQ</a></li>
+                <li><a href="https://eu.ccei-pool.com/fr/content/9-sav">Espace techniciens</a></li>
+                <li><a href="http://www.bleuelectrique.com/swimming-tools/">Swimming Tools</a></li>
+                <li><a href="https://eu.ccei-pool.com/fr/content/44-ouverture-de-compte">Ouverture d'un compte PRO</a></li>
+                <li><a href="https://eu.ccei-pool.com/fr/connexion?back=my-account" class="connexion">Connexion</a></li>
+            </ul>
+
+        </nav>
+    </header>
+    <section class="text">
+        <h1>Nous sommes <span class="auto_typing"></span>.</h1>
+        
+        <p> <br> Depuis plus de 40 ans, nous fabriquons des équipements innovants pour tous les types de piscines. <br> Nous proposons une large gamme d'appareils intelligents pour les professionnels permettant de faciliter <br> l'entretien de la piscine, d'améliorer le confort de l'utilisateur mais aussi d'animer les bassins.
+
+            <br> <br> Nous proposons 3 gammes de produits distinctes : des coffrets électriques permettant de gérer <br> la filtration, une gamme complète d'électrolyseurs et d'appareils de dosage pour un traitement <br> de l'eau automatique et des éclairages à LED à installer dans les bassins. <br>
+            
+            Découvrez sur ce site toutes nos solutions professionnelles <br> pour vos piscines ainsi que tous les éléments se rapportant à nos appareils <br> (notice technique, fiche commerciale, etc.).
+
+            </p>
+    <div class="prod">
+        <a href="https://eu.ccei-pool.com/fr/nous-contacter">Nous contacter</a>
+        <a href="#" class="produits">Produits piscine</a>
+    </div>
+    </section>
+    <div class="overlay">
+
+<!--Animation JS stylé-->
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        let typed = new Typed('.auto_typing', {
+            strings: ['bleus', 'électriques', 'CCEI'],
+            typeSpeed: 200,
+            backSpeed: 200,
+            loop: true,
+            fadeOut: true,
+            fadeOutClass: 'typed-fade-out',
+            fadeOutDelay: 500
+        })
+    </script>
+
+<!--Slide image promo "slider"-->
+<!--c'est une tentative vouée à l'échec (update j'ai réussi)-->
+<div class="les_sliding">
+    <div class="slider">
+        <div class="slides">
+<!--bouttons (ça va être galère à bouger) (update j'ai réussi)-->
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+<!--fin des bouttons-->
+<!--début des slides-->
+                <div class="slide first">
+                    <a href="https://eu.ccei-pool.com/fr/200-vigipool"><img src="vigipool.png" alt=""/></a>
+                </div>
+                <div class="slide scd">
+                    <a href="https://eu.ccei-pool.com/fr/vigipool/487-analyseur-connecte-ofix-vp.html"><img src="500x472.png" alt="Vigipool"></a>
+                </div>
+<!--fin des slides-->
+<!--démarrage automatique de la nav début-->
+                <div class="nav_auto">
+                    <div class="auto_btn1"></div>
+                    <div class="auto_btn2"></div>
+                </div>
+<!--démarrage automatique de la nav fin-->
+                <div class="nav_manuelle">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>  
+                </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+    var counter = 1;
+    setInterval(function(){
+        document.getElementById('radio' + counter).checked = true;
+        counter++;
+        if(counter > 2){
+            counter =1;
+        }
+    }, 5000);
+    </script>
+</div>
+<!--fin-->
+<!--DEBUT CATALOGUE-->
+<div class="pdf">
+    <p class="intro">Chez <span class="ccei">CCEI</span>, vous profitez de l'expertise <br> de nos ingénieurs et techniciens, 
+        <br> spécialisés dans la conception d'équipements <br> innovants pour piscine.</p> <br><br><br><br>
+    <a href="#" class="catalogue">Téléchargez le catalogue</a>
+</div>
+<!--FIN CATALOGUE-->
+</body>
+</html>
